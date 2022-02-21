@@ -10,6 +10,8 @@ A react-js based seamless web application that has multiple functionalities like
 
 **Server:** Node, Express, Axios
 
+**Database:** MySQL(innoDB)
+
 ## Demo
 
 https://rds.onlysiam.com

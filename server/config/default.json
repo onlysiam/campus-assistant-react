@@ -1,0 +1,6 @@
+{
+  "host": "localhost",
+  "db": "onlysiam_nsuaide",
+  "user": "onlysiam_rds",
+  "port": "3001"
+}

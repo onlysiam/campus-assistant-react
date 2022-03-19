@@ -22,6 +22,7 @@ import { weekdaysname, timeofday, weekdayshort, sacroomsdata } from "./data";
 import GlobalStyle from "./components/GlobalStyle";
 //animation
 import { AnimatePresence } from "framer-motion";
+import SlipUplod from "./components/courses/SlipUplod";
 
 function App() {
   const location = useLocation();
@@ -139,7 +140,8 @@ function App() {
         <Switch location={location} key={location.pathname}>
           {startpage ? <Startpage windowheight={windowheight} /> : ""}
           <Route path="/" exact>
-            {!authenticated ? (
+            <SlipUplod />
+            {/* {!authenticated ? (
               <Login
                 popup={popup}
                 setpopup={setpopup}
@@ -234,7 +236,7 @@ function App() {
                 notesReminder={notesReminder}
                 setnotesReminder={setnotesReminder}
               />
-            )}
+            )} */}
           </Route>
           <Route path="/scan" exact>
             {!authenticated ? (
